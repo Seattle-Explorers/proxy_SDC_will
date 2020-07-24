@@ -1,0 +1,648 @@
+#page-main {
+  font-family: sans-serif, Arial, Helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Description (Doesn't share space with sticky box) */
+
+.sc-AxirZ.bJCmFu {
+  width: 70%;
+}
+
+
+
+
+/* Reservation and Reviews (Share space with sticky box) */
+
+
+
+
+#share-sticky-box-components{
+  display: flex;
+}
+
+/* Reservation */
+
+.booking-combined {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Reviews */
+
+.calendar-and-reviews {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+
+
+/* Main Calendar Component */
+
+.calendar-main-container {
+  max-width: 1120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(170, 170, 170);
+}
+
+.calendars {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.left-calendar {
+  min-width: 360px;
+  flex-shrink: 1;
+}
+
+.right-calendar {
+  min-width: 360px;
+  flex-shrink: 1;
+}
+
+/* Calendar Dates Styling */
+
+td {
+  min-width: 70px;
+  height: 70px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.selected-dates {
+  color: white;
+  font-weight: bold;
+  background: black;
+  border-radius: 50%;
+}
+
+.valid-dates {
+  font-weight: bold;
+}
+
+.valid-dates:hover {
+  border: solid 2px black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.invalid-dates {
+  color: rgb(194, 194, 194);
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+/* Calendar Header */
+
+.month {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+/* Calendar Header - Right Calendar */
+
+.right-month-left-btn { /* This button is a spaceholder */
+  height: 1px;
+  width: 1px;
+}
+
+.right-month-arrow-btn {
+  border: none;
+  color: black;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.right-month-arrow-btn:hover {
+  cursor: pointer;
+}
+
+/* Calendar Header - Left Calendar */
+
+.left-month-arrow-btn {
+  display: flex;
+  flex-flow: row;
+  align-self: center
+}
+
+.left-month-arrow-btn:hover {
+  cursor: pointer;
+}
+
+.left-calendar-right-arrow-btn {
+  visibility: collapse;
+  flex-flow: row;
+  align-self: center;
+}
+
+.left-calendar-right-arrow-btn:hover {
+  cursor: pointer;
+}
+
+/* Calendar Footer */
+
+.calendar-bottom {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+}
+
+.calendar-bottom-hidden {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+.clear-dates-space {
+  width: 1px;
+  height: 1px;
+}
+
+.clear-dates-btn-container {
+  align-items: space-between;
+  margin-right: 1%;
+}
+
+.clear-dates-btn {
+  flex: 1;
+  width: 15;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.clear-dates-btn:hover {
+  cursor: pointer;
+}
+
+.keyboard-icon {
+  margin-left: 2%;
+  border: none;
+  flex: 1;
+}
+
+.keyboard-icon-hidden {
+  margin-top: 5px;
+  margin-left: 2px;
+  border: none;
+  flex: 1;
+  visibility: hidden;
+}
+
+.clear-dates-btn-hidden {
+  flex: 1;
+  width: 15px;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+  flex: 1;
+  visibility: hidden;
+}
+
+
+
+/* Stikcy Box Component */
+#sticky-box-container {
+  position: static;
+}
+
+
+.sticky-box {
+  /* top: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 18rem;
+  width: 24rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  min-width: 250px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 20rem;
+  bottom: 20rem;
+  margin-right: -10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Price / Review */
+
+.sticky-box-static-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.price {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left: 7%;
+}
+
+.price-info {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.review {
+  flex: 1;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.star-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40px;
+  font-size: 10px;
+}
+
+/* Check-In / Checkout */
+
+.check-in-out-boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-in-box {
+  width: 100px;
+  height: 45px;
+  border-top-left-radius: 5px;
+  text-align: start;
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 1;
+}
+
+.check-in-box-top {
+  font-size: 13px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.check-in-box-bottom {
+  padding-top: 3px;
+  color: gray;
+}
+
+.check-out-box {
+  width: 100px;
+  height: 45px;
+  border-top-right-radius: 5px;
+  text-align: start;
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  flex-shrink: 1;
+}
+
+.check-out-box-top {
+  font-size: 13px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.check-out-box-bottom {
+  padding-top: 3px;
+  color: gray;
+}
+
+/* Sticky Box Calendar */
+
+.sticky-box-calendars:hover {
+  cursor: pointer;
+}
+
+.booking-calendar-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-calendar-top-description {
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+.booking-calendar-checkin-checkout-boxes {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+}
+
+.booking-calendar-check-in-box {
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: start;
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 1;
+}
+
+.booking-calendar-check-out-box {
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: start;
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  flex-shrink: 1;
+}
+
+.booking-calendar-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.sticky-box-calendar-modal {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.2);
+  width: fit-content;
+  height: fit-content;
+  position: sticky;
+  top: 386px;
+  left: 307px;
+}
+
+.modal-footer {
+  display: flex;
+}
+
+.modal-footer-left {
+  flex: 1;
+  margin-left: 5%;
+}
+
+.modal-footer-right {
+  flex: 1;
+  display: flex;
+}
+
+.modal-footer-clear-dates-btn-container {
+  width: fit-content;
+}
+
+.modal-footer-clear-dates-btn {
+  font-size: 16px;
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.modal-footer-clear-dates-btn:hover {
+  cursor: pointer;
+}
+
+.modal-footer-close-btn {
+  font-size: 36px;
+  font-weight: bold;
+  background-color: black;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 4px;
+}
+
+.modal-footer-close-btn:hover {
+  cursor: pointer;
+}
+
+/* Guests Box */
+
+.sticky-box-guests {
+  align-content: center;
+}
+
+.guests-box {
+  width: 217px;
+  height: 45px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: start;
+  border: 1px solid black;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  flex-shrink: 1;
+}
+
+.guests-box-header {
+  font-size: 13px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.guests-box-header:hover {
+  cursor: pointer;
+}
+
+.guests-box-bottom {
+  display: flex;
+}
+
+.guests-box-bottom:hover {
+  cursor: pointer;
+}
+
+.guests-box-info {
+  flex: 1;
+}
+
+.down-arrow {
+  flex: 1;
+  align-self: flex-end;
+}
+
+.guests-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: fit-content;
+  width: 224px;
+  z-index: 10;
+}
+
+.guests-dropdown-interactive {
+  display: flex;
+}
+
+.guests-dropdown-adults {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guests-dropdown-children {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guests-dropdown-infants {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guests-dropdown-adults-text-fixed {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.guests-dropdown-children-text-fixed {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.guests-dropdown-infants-text-fixed {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.guests-dropdown-info-container {
+  margin-top: 5%;
+}
+
+.guests-dropdown-number {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.guests-dropdown-close-btn-container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.guests-dropdown-close-btn {
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-decoration: underline;
+}
+
+.guests-dropdown-close-btn:hover {
+  cursor: pointer;
+}
+
+.guests-dropdown-minus-icon:hover {
+  cursor: pointer;
+}
+
+.guests-dropdown-plus-icon:hover {
+  cursor: pointer;
+}
+
+
+/* Check Availability Button */
+
+.sticky-box-availability-btn-container {
+  z-index: -1;
+}
+
+.sticky-box-availability-btn {
+  background-color: #ff5a5f;
+  color: white;
+  width: 223px;
+  height: 45px;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.sticky-box-availability-btn:hover {
+  cursor: pointer;
+}
+
+
+
+/* Styling For Smaller Display */
+
+
+
+@media only screen and (max-width: 890px) {
+  /* .calendar-main-container {
+    width: 360px;
+  }
+
+  .sticky-box {
+    margin-left: 1px;
+  } */
+
+  .right-calendar {
+    visibility: collapse;
+  }
+
+  .left-calendar-right-arrow-btn {
+    visibility: visible;
+  }
+
+  .clear-dates-btn {
+    visibility: hidden;
+  }
+
+  .keyboard-icon-hidden {
+    visibility: visible;
+    margin-left: 2%;
+    border: none;
+  }
+
+  .keyboard-icon {
+    visibility: hidden;
+  }
+
+  .clear-dates-btn-hidden {
+    visibility: visible;
+    margin-left: 1%;
+    border: none;
+    text-decoration: underline;
+  }
+
+  .clear-dates-btn {
+    visibility: hidden;
+  }
+}

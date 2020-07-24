@@ -1,16 +1,28 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <link rel="stylesheet" type="text/css" href="reservation/style.css">
-    <meta charset="utf-8">
-    <title>"AirBnB"</title>
+    <title>Latitude</title>
+
+    <link rel="stylesheet" type=text/css href="style.css">
   </head>
   <body>
-    <div id="container"></div>
-    <div id="booking-component"></div>
-    <div id="reviews"></div>
+    <div id="page-main">
+      <div id="no-sticky-box-component">
+        <div id="container"></div>
+        <div id="description"></div>
+      </div>
+      <div id="share-sticky-box-components">
+        <div id="calendar-and-reviews">
+          <div id="calendar-component"></div>
+          <div id="reviews"></div>
+        </div>
+        <div id="sticky-box-container">
+          <div id="booking-component"></div>
+        </div>
+      </div>
+    </div>
     <script src="/description/main.js"></script>
-    <script src="/reservation/bundle.js"></script>
-    <script src="/review/bundle.js"></script>
+    <script src="/:id/reservation/reservationBundle.js"></script>
+    <script src="reviews/bundle.js"></script>
   </body>
 </html>
